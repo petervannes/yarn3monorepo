@@ -1,0 +1,12 @@
+{
+	"name": "@myorg/account-products-save",
+	"version": "1.5.0",
+	"private": true,
+	"description": "Account Products Save",
+	"license": "ISC",
+	"team": "My Team",
+	"title": "Account Products Save",
+	"scripts": {
+		"build": "echo ::::::::::  build from package save"
+	}
+}

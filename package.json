@@ -1,0 +1,42 @@
+{
+	"name": "@anwb/monorepo",
+	"version": "1.33.0",
+	"private": true,
+	"description": "Account Personal Details",
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.anwbonline.nl/anwb/it-kanalen/mijn-anwb/frontends/monorepo"
+	},
+	"license": "ISC",
+	"scripts": {
+		"preinstall": "npx only-allow yarn && husky install",
+    "build:configs1": "yarn workspaces foreach --verbose  --include configs/list run build",
+    "build:configs2": "yarn workspaces foreach --verbose  --include [configs/**] run build",
+    "build:configs3": "yarn workspaces foreach --verbose  --include [configs/list] run build",
+    "build:configs4": "yarn workspaces foreach --verbose  --include 'configs/list' run build",
+    "build:all": "yarn workspaces foreach --parallel --verbose  run build"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"resolutions": {
+		"babel-eslint-parser/semver": "^7.3.2"
+	},
+	"workspaces": [
+		"packages/**",
+		"configs/**"
+	],
+	"devDependencies": {
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"husky": "^8.0.3"
+	},
+	"engines": {
+		"node": "18"
+	},
+	"packageManager": "yarn@3.6.0",
+	"team": "Mijn ANWB",
+	"title": "Monorepo setup"
+}

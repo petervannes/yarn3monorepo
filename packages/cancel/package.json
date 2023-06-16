@@ -1,0 +1,12 @@
+{
+	"name": "@myorg/account-products-cancel",
+	"version": "1.5.0",
+	"private": true,
+	"description": "Account Products Cancel",
+	"license": "ISC",
+	"team": "My Team",
+	"title": "Account Products Cancel",
+	"scripts": {
+		"build": "echo ::::::::::  build from package cancel"
+	}
+}

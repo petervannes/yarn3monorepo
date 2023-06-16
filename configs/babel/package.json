@@ -1,0 +1,9 @@
+{
+  "name": "@myorg/babelconfig",
+  "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build": "echo ::::::::::  build from babel"
+  }
+}
