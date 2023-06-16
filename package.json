@@ -14,6 +14,9 @@
     "build:configs2": "yarn workspaces foreach --verbose  --include [configs/**] run build",
     "build:configs3": "yarn workspaces foreach --verbose  --include [configs/list] run build",
     "build:configs4": "yarn workspaces foreach --verbose  --include 'configs/list' run build",
+    "build:configs5": "yarn workspaces foreach --verbose  --include ['configs/list'] run build",
+    "build:configs6": "yarn workspaces foreach --verbose  --include ['configs\/list'] run build",
+    "build:configs7": "yarn workspaces foreach --verbose  --include \"configs/list\" run build",
     "build:all": "yarn workspaces foreach --parallel --verbose  run build"
 	},
 	"config": {
