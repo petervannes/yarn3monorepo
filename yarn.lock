@@ -5,16 +5,6 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@anwb/monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@anwb/monorepo@workspace:."
-  dependencies:
-    commitizen: ^4.3.0
-    cz-conventional-changelog: ^3.3.0
-    husky: ^8.0.3
-  languageName: unknown
-  linkType: soft
-
 "@babel/code-frame@npm:^7.0.0":
   version: 7.22.5
   resolution: "@babel/code-frame@npm:7.22.5"
@@ -164,6 +154,16 @@ __metadata:
 "@myorg/jestconfig@workspace:configs/jest":
   version: 0.0.0-use.local
   resolution: "@myorg/jestconfig@workspace:configs/jest"
+  languageName: unknown
+  linkType: soft
+
+"@myorg/monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@myorg/monorepo@workspace:."
+  dependencies:
+    commitizen: ^4.3.0
+    cz-conventional-changelog: ^3.3.0
+    husky: ^8.0.3
   languageName: unknown
   linkType: soft
 
